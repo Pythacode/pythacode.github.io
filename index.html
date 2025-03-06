@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--{% load static %}-->
+<html>
+<head>
+	<title>C.V. Petit--Frulio Titouan</title>
+	<!--<link rel="icon" href="{% static 'cv/photo.jpg' %}" type="image/x-icon">-->
+	<link rel="icon" href="photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'css/cv.css' %}">-->
+
+
+</head>
+<body>
+	<header class="cv" id="header">
+		<h1 class='titlecv'>Curriculum Vitae<br>Petit--Frulio Titouan</h1>
+		<!--<img src="{% static 'cv/photo.jpg' %}" alt='Photo' class="photo">-->
+		<img src="photo.jpg" alt='Photo' class="photo">
+        <hr />
+	</header>
+
+    
+
+	<main class="container">
+
+        <details class="etudes" id="Études">
+            <summary class="title">
+                <h2>
+                    <img src="fleche.svg" class="develope-icon" id="develope-icon-etudes" style="transform: rotate(0deg);">
+                    Études
+                </h2>
+                <hr />
+            </summary>
+            <main id="content-etude" class="content">
+                <p>
+                    Élève de seconde au <a href="https://joliot-curie.mon-ent-occitanie.fr/" class="cv">lycée I. et F. Joliot Curie</a>
+                </p>
+                <p>
+                    LV2 : Allemand
+                    <br>
+                    Stage de troisième au service SIG et aplication interne de la comunauté d'aglomération
+                    <hr>
+                    Options au collège :
+                    <ul>
+                        <li>Théatre</li>
+                        <li>Latin</li>
+                    </ul>
+                </p>
+            </main>
+        </details>
+
+        <details class="loisir">
+            <summary class="title">
+                <h2>
+                    <img src="fleche.svg" class="develope-icon" id="develope-icon-loisir" style="transform: rotate(0deg);">
+                    Loisirs
+                </h2>
+                <hr />
+            </summary>
+            <main id="content-loisir" class="content">
+                <ul>
+                    <li>Programmation</li>
+                    <li>Lecture</li>
+                    <li>Sudoku et jeux de logique</li>
+                    <li>Vélo</li>
+                </ul>
+            </main>
+        </details>
+
+        <details class="extrascolair">
+            <summary class="title">
+                <h2>
+                    <img src="fleche.svg" class="develope-icon" id="develope-icon-extrascolair" style="transform: rotate(0deg);">
+                    Activités extra-scolaires
+                </h2>
+                <hr />
+            </summary>
+            <main id="content-extrascolair" class="content">
+                <ul>
+                    <li>Participation au Conseil Municipal des jeunes depuis septembre 2021</li>
+                    <li>Apprentissage du violoncelle au Conservatoire à Rayonnement Intercommunal de Sète depuis 2020</li>
+                </ul>
+            </main>
+        </details>
+
+    	<details class="competence">
+            <summary class="title">
+                <h2>
+                    <img src="fleche.svg" class="develope-icon" id="develope-icon-competence" style="transform: rotate(0deg);">
+                    Compétences
+                </h2>
+                <hr />
+            </summary>
+            <main id="content-competence" class="content">
+                <ul>
+                    <li>Informatique
+                        <ul>
+                            <li>Utilisation quotidienne de Linux (Kubuntu) et de windows 11<br>Maîtrise des commandes de base</li>
+                            <li>Bonne maîtrise de Windows</li>
+                            <li>Programmation : Utilisation des langages :
+                                <ul>
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>Java</li>
+                                    <li>Javascript</li>
+                                    <li>sh</li>
+                                    <li>bat</li>
+                                    <li>Django</li>
+                                    <li>Arduino</li>
+                                    <li>PHP</li>
+                                    <li>Micro:bit</li>
+                                </ul>
+                            </li>
+                            <li>Au 18 septembre 2024, 707 point PIX, et 580 à la certification</li>
+                        </ul>
+                    </li>
+                    <li>ASSR2</li>
+                </ul>
+            </main>
+        </details>
+
+    	<details class="coordonnees" id="Coordonnées">
+            <summary class="title">
+                <h2>
+                    <img src="fleche.svg" class="develope-icon" id="develope-icon-coordonnees" style="transform: rotate(0deg);">
+                    Coordonnées
+                </h2>
+                <hr />
+            </summary>
+            <main id="content-coordonnees" class="content"></main>
+                <ul>
+                    <li>Mail : <a href="mailto:titouan.petit-frulio@laposte.net" class="cv">titouan.petit-frulio@laposte.net</a></li>
+                    <li>Téléphone : <a class="cv" href="tel:+33769809965">+33 7 69 80 99 65</a></li>
+                </ul>
+            </details>
+        </details>
+    </main>
+    <footer>
+        <script src="section.js"></script>
+    </footer>
+</body>
+</html>
