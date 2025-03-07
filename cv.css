@@ -89,9 +89,22 @@ a {
 }
 
 .logo {
-    width: 150px;
+    width: 80%;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#kokami {
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    -webkit-mask: radial-gradient(circle, transparent 100px, black 101px);
+    mask: radial-gradient(circle, transparent 100px, black 101px);
+    top: 0;
+    right: 0;
+    pointer-events: none;
 }
