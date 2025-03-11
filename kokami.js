@@ -19,7 +19,7 @@ document.addEventListener('keydown', (event) => {
         touches.shift()
     }
 
-    if (touches.join(", ") == "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a" ) {
+    if (touches.join(", ") == "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowRight, ArrowLeft, ArrowRight, ArrowLeft, a, b" ) {
         console.log("kokami !");
         kokami.style.display = "block";
     }
