@@ -68,7 +68,7 @@ header {
     grid-column: 1;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
     body {
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: auto;
