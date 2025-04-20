@@ -9,7 +9,7 @@ document.addEventListener('keydown', (event) => {
         touches.shift()
     }
 
-    if (touches.join(", ") == "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowRight, ArrowLeft, ArrowRight, ArrowLeft, a, b" ) {
+    if (touches.join(", ") == "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, a, b" ) {
         console.log("kokami !");
         window.location.href = "/kokami";
     }
