@@ -1,41 +1,58 @@
 /* CV */
 
 :root {
-    --background-color : #0D1117;
+    --background-color : #38363F;
+}
+
+@font-face {
+  font-family: 'Poetsen One';
+  src: url('./../font/PoetsenOne-Regular.ttf') format('truetype');
 }
 
 body {
-    padding: 20px;
     background-color: var(--background-color);
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Poetsen One', sans-serif;
     color: white;
+    user-select: none;
+    margin: 0;
+}
+
+.big-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-rows: repeat(5, auto);
+    margin: 0 10px;
+}
+
+@media (max-height : 790) {
+    .big-container {
+        height: 100vh;  
+    }  
 }
 
 .container {
     border-radius: 10px;
     border: solid 1px white;
     padding: 10px;
-    margin: 10px;
     overflow: hidden;
     transition-duration: 500ms;
     background-color: var(--background-color);
 }
 
-header {
-    text-align: center;  display: flex;
+header,
+.title {
+    display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: 1;
-    grid-column: 1/6;
+    height: 100vh;
+    text-align: end;
+    font-size: large;
 }
 
 .container:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .etudes {
@@ -54,7 +71,12 @@ header {
 }
 
 .contact {
-    grid-row: 5;
+    grid-row: 4;
+    grid-column: 1/6;
+}
+
+.projects {
+    grid-row: 1;
     grid-column: 1/6;
     height: 150px;
 }
@@ -63,9 +85,13 @@ header {
     grid-row: 2;
 }
 
-.github {
+.to-project {
     grid-row: 3;
     grid-column: 1;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -121,15 +147,17 @@ header {
     }
 }
 
-.photo {
+.photo,
+.github {
     border-radius: 50% 10%;
-    height: 200px;
+    height: 250px;
     width: auto;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .logo {
-    width: 80%;
+    height: 150px;
+    width: auto;
     position: relative;
     top: 50%;
     left: 50%;
@@ -160,4 +188,36 @@ h2 {
 
 hr {
     color : white;
+}
+
+nav {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telechargeur_youtube {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: #2b292f;
+    padding: 30px;
+}
+
+footer img {
+    border-radius: 50%;
 }
