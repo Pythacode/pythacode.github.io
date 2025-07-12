@@ -1,0 +1,33 @@
+:root {
+    --background-color : #38363F;
+}
+
+@font-face {
+  font-family: 'Poetsen One';
+  src: url('./../font/PoetsenOne-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: left;
+    font-family: 'Poetsen One', sans-serif;
+    color: white;
+    user-select: none;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #2b292f;
+    padding: 30px;
+    padding-bottom:10px
+}
+
+footer img {
+    border-radius: 50%;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+}
