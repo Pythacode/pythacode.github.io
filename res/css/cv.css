@@ -62,7 +62,7 @@ header,
 
 .extrascolair {
     grid-row: 3;
-    grid-column: 2/4;
+    grid-column: 1/4;
 }
 
 .competences {
@@ -162,6 +162,16 @@ header,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.LogoProject {
+    height:100px;
+    width:fit-content;
+    align-self:center;
+}
+
+a.container {
+    text-decoration:none;
 }
 
 #kokami {
