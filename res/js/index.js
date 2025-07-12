@@ -1,7 +1,5 @@
 const nav = document.querySelector("nav");
-const to_project = document.getElementById("to-project");
 nav.addEventListener("click", () => scrollDown(1));
-to_project.addEventListener("click", () => scrollDown(3));
 window.addEventListener("scroll", updateButtonVisibility);
 updateButtonVisibility();
 
