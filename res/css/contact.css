@@ -1,0 +1,84 @@
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #2b292f;
+}
+
+header h2 {
+    margin : 0
+}
+
+form {
+    padding : 20px 15%
+}
+
+form,
+.champ {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.champ {
+    align-items: start;
+    width:100%;
+    margin:10px 0
+}
+
+input {
+    width:100%;
+    padding-top:10px;
+    font-family: 'Poetsen One', sans-serif;
+    color:white;
+    border:0;
+    border-bottom:2px solid white;
+    background:none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.propulser {
+    font-size: 0.7rem;
+    align-self:end;
+}
+
+.champRequisI {
+    font-size:0.6rem;
+}
+
+input[type="submit"] {
+    cursor:pointer;
+    text-decoration : none;
+    background-color : white;
+    border-radius:5px;
+    color:black;
+    padding:5px;
+    margin:2px 5px;
+}
+
+.ql-toolbar.ql-snow,
+div.ql-picker-label{
+    color:white !important;
+    margin-top:10px;
+    padding-bottom:10px
+}
+
+.ql-picker-label{
+    color:white !important;
+}
+
+.ql-container.ql-snow {
+    width:100%;
+    min-height:200px;
+}
+
+.ql-toolbar svg .ql-stroke {
+  stroke: white !important;
+}
+
+.ql-toolbar svg .ql-fill {
+  fill: white !important;
+}
+
