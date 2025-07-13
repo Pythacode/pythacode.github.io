@@ -25,15 +25,6 @@ const quill = new Quill('#message', {
   theme: 'snow'
 });
 
-quill.setContents([])
-
-
-const message = quill.root.innerHTML;
-
-const date = formatDate(new Date());
-
-console.log("Message (HTML) :", message);
-
 const form = document.getElementById('contactForm');
 emailjs.init('kQntJTIis5HL5JgnX');
 
@@ -58,6 +49,13 @@ function formatDate(date) {
 
 const SubmitButton = document.getElementById('submit');
 
+var email;
+var subject;
+var name;
+var message;
+var templateParams;
+var date;
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -65,10 +63,10 @@ form.addEventListener('submit', function(event) {
         SubmitButton.style = "cursor:default;"
     SubmitButton.disabled = true;
 
-    const email = document.getElementById('mail').value;
-    const subject = document.getElementById('subject').value;
-    const name = document.getElementById('name').value;
-    const message = quill.root.innerHTML;
+    email = document.getElementById('mail').value;
+    subject = document.getElementById('subject').value;
+    name = document.getElementById('name').value;
+    message = quill.root.innerHTML;
 
     if (message == "<p><br></p>") {
         alert('Entrez un message')
@@ -78,13 +76,13 @@ form.addEventListener('submit', function(event) {
         return
     }
 
-    const date = formatDate(new Date());
+    date = formatDate(new Date());
 
     console.log("E-mail :", email);
     console.log("Sujet :", subject);
     console.log("Message (HTML) :", message);
 
-    const templateParams = {
+    templateParams = {
             title: subject,
             name: name,
             time: date,
