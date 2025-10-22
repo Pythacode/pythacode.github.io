@@ -49,7 +49,6 @@ function createLigne(table, url, title, date_text, size_text) {
 function showVersion(name, container) {
     getVersion(name).then(infos => {
         infos.forEach(info => {
-            console.log(info)
             const newDiv = document.createElement("fieldset");
             const title = document.createElement("legend");
             title.textContent = info.name || info.tag_name || "Version inconu";
