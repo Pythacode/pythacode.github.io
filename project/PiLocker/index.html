@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PiLocker</title>
+	<link rel="icon" href="./../../res/logo/PL.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./../../res/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./../../res/css/project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header>
+        <div>
+            <h1>PiLocker<br><span style="font-family: 'Times New Roman', Times, serif;">π</span></h1>
+            <img src="./../../res/logo/PL.png" alt='logo' class="logo">
+        </div>
+	</header>
+
+    <main>
+        <p class="description">
+            Ce projet est une aplication qu'on ne peut quitter sans rentrer les n première décimals de pi. A chaque fois qu'on rentre plus de décimal que n, n augmente et devient le nombre de décimal qu'on à rentrer. Ainsi, si l'utilisateur entre les 5 premières décimal, il devras en rentrer au moin 5 la prochaine fois. Je l'ai codé pour apprendre les premières décimal de pi. L'application est sous <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.fr" target="_blank"> licence Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>.
+        </p>
+
+        <br>
+
+        <p class="github">
+            Il est disponible sur github à cette adresse : <a href="http://github.com/Pythacode/PiLocker" target="_blank">https://github.com/Pythacode/PiLocker</a>
+        </p>
+
+        <div class="separator">
+            <h3>Téléchargement</h3>
+            <hr>
+        </div>
+
+        <div id="version"></div>
+        
+    </main>
+
+    <nav>
+        Voir plus
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 10L12 16L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </nav>
+
+    <footer>
+        <img src="./../../res/img/photo-carre.jpg" alt="Photo">
+        <h2>
+            Mon site
+        </h2>
+        <p>
+            Héberger par : <a href="https://pages.github.com/">GitHub</a>
+            <p id="MAJ">Dernière mise à jour : Chargement...</p>
+        </p>
+        <script src="./../../res/js/nav.js" defer></script>
+        <script src="./../../res/js/maj.js" defer></script>
+        <script src="./../../res/js/downloadSource.js"></script>
+        <script defer>
+            showVersion("PiLocker", "version")
+        </script>
+    </footer>
+
+</body>
+</html>
