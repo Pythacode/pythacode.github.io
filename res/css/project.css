@@ -6,11 +6,6 @@ main {
     margin : 0 30px;
 }
 
-.description,
-.github {
-    text-align: justify;
-}
-
 fieldset {
     border: 2px solid white;
     border-radius: 10px;
