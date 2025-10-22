@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--background-color);
-    text-align: left;
+    text-align: justify;
     font-family: 'Poetsen One', sans-serif;
     color: white;
     user-select: none;
