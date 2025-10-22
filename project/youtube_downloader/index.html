@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Téléchargeur Youtube</title>
+	<link rel="icon" href="./../../res/logo/YTD.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./../../res/css/index.css">
+	<link rel="stylesheet" type="text/css" href="./../../res/css/project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Téléchargeur<br>Youtube</h1>
+            <img src="./../../res/logo/YTD.png" alt='logo' class="logo">
+        </div>
+	</header>
+
+    <main>
+        <p class="description">
+            Ce projet est un téléchargeur youtube pour Windows, Mac (Aucune version compilé disponible) et Linux. Crée en novembre 2024, il a pour ambition de permetre le téléchargement de playlist complète ou de noumbreuse vidéo, en format audio ou vidéo, avec édition de methadonnés intégré et à pour but d'avoir des options de téléchargement le plus personalisable possible. L'application est disponible en Français, en Anglais et en Allemand. Il est sous <a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.fr" target="_blank"> licence Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>.
+        </p>
+
+        <br>
+
+        <p class="github">
+            Il est disponible sur github à cette adresse : <a href="http://github.com/Pythacode/telechargeur_youtube" target="_blank">https://github.com/Pythacode/telechargeur_youtube</a>
+        </p>
+
+        <div class="separator">
+            <h3>Téléchargement</h3>
+            <hr>
+        </div>
+
+        <div id="version"></div>
+        
+    </main>
+
+    <nav>
+        Voir plus
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 10L12 16L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </nav>
+
+    <footer>
+        <img src="./../../res/img/photo-carre.jpg" alt="Photo">
+        <h2>
+            Mon site
+        </h2>
+        <p>
+            Héberger par : <a href="https://pages.github.com/">GitHub</a>
+            <p id="MAJ">Dernière mise à jour : Chargement...</p>
+        </p>
+        <script src="./../../res/js/nav.js" defer></script>
+        <script src="./../../res/js/maj.js" defer></script>
+        <script src="./../../res/js/downloadSource.js"></script>
+        <script defer>
+            showVersion("telechargeur_youtube", "version")
+        </script>
+    </footer>
+
+</body>
+</html>

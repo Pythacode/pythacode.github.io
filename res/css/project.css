@@ -1,0 +1,65 @@
+.logo {
+    padding-left: 10px;
+}
+
+main {
+    margin : 0 30px;
+}
+
+.description,
+.github {
+    text-align: justify;
+}
+
+fieldset {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.separator h3 {
+    margin: 0;
+}
+
+div.separator hr {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#version {
+    margin: 20px 30px;
+}
+
+legend {
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-color-secondary);
+}
+
+td {
+    padding: 5px 10px;
+}
+
+td.date {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.file {
+    text-decoration: none;
+}
