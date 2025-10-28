@@ -68,10 +68,6 @@ header div,
     font-size: large;
 }
 
-/*.container:hover {
-    transform: scale(1.03);
-}*/
-
 nav {
     position: fixed;
     right: 50px;
@@ -81,4 +77,12 @@ nav {
     flex-direction: column;
     cursor: pointer;
     align-items: center;
+}
+
+.button {
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: white;
+    padding: 5px 10px;
 }
