@@ -77,6 +77,11 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition-duration : 500ms
+}
+
+.project:hover {
+    box-shadow : white 0 0 13p;
 }
 
 
