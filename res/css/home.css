@@ -80,8 +80,7 @@ hr {
     transition-duration : 500ms
 }
 
-.project:hover,
-.github {
+.project:hover {
     box-shadow : white 0 0 13px;
 }
 
