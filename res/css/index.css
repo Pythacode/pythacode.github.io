@@ -21,11 +21,11 @@ body {
 footer {
     text-align: center;
     background-color: #2b292f;
-    padding: 10px 30px;
+    padding: 10px;
     padding-bottom:10px
 }
 
-footer img {
+footer img.photo-moa {
     border-radius: 50%;
 }
 

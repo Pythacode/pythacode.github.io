@@ -41,7 +41,21 @@ main {
 
 .ligne {
   border-top: 5px dashed black;
-  width: 200px;
   border-color: white;
-  width : 100%;
+  padding: 10px 0;
+  animation-name: ligne_app;
+  animation-duration: 30s;
+  position: relative;
+}
+
+@keyframes ligne_app {
+    from {
+        left : -100vw;
+    }
+    30% {
+        left: 0;
+    }
+    60% {
+        left: 100vw;
+    }
 }
