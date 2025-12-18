@@ -38,3 +38,10 @@ main {
     transform: rotate(-360deg)
   }
 }
+
+.ligne {
+  border-top: 5px dashed black;
+  width: 200px;
+  border-color: white;
+  width : 100%;
+}
