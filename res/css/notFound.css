@@ -7,10 +7,34 @@ body {
 .notFound {
     font-size: 5rem;
     margin: 0;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count : infinite;
 }
 
 main {
     align-content: center;
     text-align: center;
     flex: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  10% {
+    transform: rotate(20deg)
+  }
+  20% {
+    transform: rotate(-30deg)
+  }
+  30% {
+    transform: rotate(40deg)
+  }
+  50% {
+    transform: rotate(-360deg)
+  }
+  to {
+    transform: rotate(-360deg)
+  }
 }
