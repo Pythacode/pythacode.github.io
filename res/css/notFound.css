@@ -1,12 +1,13 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .notFound {
-    font-size: 5rem;
-    margin: 0;
+  font-size: 5rem;
+  margin: 0;
   animation-name: rotate;
   animation-duration: 10s;
   animation-iteration-count : infinite;
@@ -39,23 +40,57 @@ main {
   }
 }
 
+.ligneContaineur {
+  width: 0;
+  margin-top: 60px;
+  overflow: hidden;
+  animation-name: ligne_app;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+}
+
 .ligne {
   border-top: 5px dashed black;
   border-color: white;
   padding: 10px 0;
-  animation-name: ligne_app;
-  animation-duration: 30s;
-  position: relative;
+  width: 100vw;
 }
 
 @keyframes ligne_app {
     from {
-        left : -100vw;
+        width: 0;
     }
     30% {
-        left: 0;
+        width: 100vw;
     }
     60% {
-        left: 100vw;
+        width: 100vw;
+    }
+    90% {
+      width: 0;
+    }
+}
+
+.car {
+  width: 100px;
+  left: -110px;
+  position: absolute;
+  animation-name: car;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+}
+
+@keyframes car {
+    from {
+        left: -100px;
+    }
+    30% {
+        left: -100px;
+    }
+    60% {
+        left: 120vw;
+    }
+    to {
+      left: 120vw
     }
 }
