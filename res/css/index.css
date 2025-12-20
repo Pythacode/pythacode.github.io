@@ -32,6 +32,10 @@ footer img.photo-moa {
 a {
     cursor: pointer;
     color: white;
+    transition-duration: 500ms;
+    &:hover  {
+        text-shadow : white 0 0 2px;
+    }
 }
 
 .big-container {
