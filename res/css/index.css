@@ -61,8 +61,18 @@ a {
     background-color: var(--background-color);
 }
 
+div.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+div.column h1,
+div.column p {
+    margin: 0;
+}
+
 header,
-header div,
 .title {
     display: flex;
     align-items: center;
