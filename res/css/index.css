@@ -22,7 +22,8 @@ footer {
     text-align: center;
     background-color: #2b292f;
     padding: 10px;
-    padding-bottom:10px
+    padding-bottom: 10px;
+    margin-top: 30px;
 }
 
 footer img.photo-moa {
@@ -99,4 +100,13 @@ nav {
     color: var(--background-color);
     background-color: white;
     padding: 5px 10px;
+}
+
+h3.separator {
+    margin-bottom: 0;
+}
+
+hr.separator {
+    border: 1px solid white;
+    border-radius: 10px;
 }

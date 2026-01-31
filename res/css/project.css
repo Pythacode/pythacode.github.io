@@ -13,15 +13,6 @@ fieldset {
     overflow: hidden;
 }
 
-div.separator h3 {
-    margin: 0;
-}
-
-div.separator hr {
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
 #version {
     margin: 20px 30px;
 }
