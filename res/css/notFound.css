@@ -14,9 +14,9 @@ body {
 }
 
 main {
-    align-content: center;
-    text-align: center;
-    flex: 1;
+  align-content: center;
+  text-align: center;
+  flex: 1;
 }
 
 @keyframes rotate {
@@ -47,6 +47,24 @@ main {
   animation-name: ligne_app;
   animation-duration: 15s;
   animation-timing-function: linear;
+}
+
+.fall{
+  position: absolute;
+  animation: fall infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+}
+
+@keyframes fall {
+    from {
+        top: -30px;
+        transform: rotate(0deg);
+    }
+    to {
+      top: 100vh;
+      transform: rotate(1000deg);
+    }
 }
 
 .ligne {
