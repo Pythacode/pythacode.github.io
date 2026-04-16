@@ -16,6 +16,7 @@ body {
     color: white;
     user-select: none;
     margin: 0;
+    overflow-x: hidden;
 }
 
 footer {
@@ -109,4 +110,50 @@ h3.separator {
 hr.separator {
     border: 1px solid white;
     border-radius: 10px;
+}
+
+.select_language {
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    right : 0px;
+    background-color: var(--highlit-color);
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: white solid 1px;
+    border-right: none;
+    box-shadow : white 0 0 3px;
+    animation: 2s forwards ease-out slide-in;
+    animation-delay: 2s;
+    transform: translateX(110%)
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+select {
+    border: none;
+    color: white;
+    border-bottom: 1px white solid;
+    background-color: inherit;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+select:hover {
+    cursor: pointer;
 }

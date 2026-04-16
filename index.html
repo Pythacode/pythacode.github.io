@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<title>C.V. Petit--Frulio Titouan</title>
 	<link rel="icon" href="res/img/photo-carre.jpg" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="res/css/index.css">
 	<link rel="stylesheet" type="text/css" href="res/css/home.css">
-	<script src="res/js/maj.js" defer></script>
-        <script src="res/js/kokami.js" defer></script>
-        <script src="res/js/nav.js" defer></script>
+	<script src="res/js/maj.js" type="module" defer></script>
+    <script src="res/js/trans.js" type="module" defer></script>
+    <script src="res/js/kokami.js" defer></script>
+    <script src="res/js/nav.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -16,168 +17,169 @@
 		<img src="res/img/photo.jpg" alt='Photo' class="photo">
 	</header>
 
-    <div class="big-container">
+    <main>
+        <div class="big-container">
 
-        <div class="container etudes">
-            <h2>
-                Études
-            </h2>
-            <hr />
-            <p>
-                Élève de première au <a href="https://joliot-curie.mon-ent-occitanie.fr/">lycée I. et F. Joliot Curie</a>
-            </p>
-            <p>
-                LV2 : Allemand
-                Option cinéma audio visuel en première
-                <hr>
-                B.I.A mention Assez bien
-                <br>
-                Stage de seconde à la régie lumière de l'<a href="https://www.opera-orchestre-montpellier.fr/">Orchestre Opera National de Montpellier</a>
-                <hr>
-                Stage de troisième au service SIG et applications interne de la communauté d'agglomérations
-                <br>
-                Options au collège :
-                <ul>
-                    <li>Théâtre</li>
-                    <li>Latin</li>
-                </ul>
-            </p>
-        </div>
-
-        <div class="container loisirs">
-            <h2>
-                Loisirs
-            </h2>
-            <hr />
-            <ul>
-                <li>Programmation</li>
-                <li>Lecture</li>
-                <li>Jeux de logique</li>
-                <li>Vélo</li>
-                <li>Violoncelle</li>
-            </ul>
-        </div>
-
-        <div class="container extrascolair">
-            <h2>
-            Activités extra-scolaires
-            </h2>
-            <hr />
-            <ul>
-                <li>Participation au concours <a href="http://www.prologin.org" target="_blank">prologin</a> 2026 (Arrivé en finale)</li>
-                <li>Participation au Conseil Municipal des jeunes de septembre 2021 à juin 2025</li>
-                <li>Apprentissage du violoncelle au Conservatoire à Rayonnement Intercommunal de Sète depuis 2020</li>
-            </ul>
-        </div>
-
-        <div class="container competences">
-            <h2>
-                Compétences
-            </h2>
-            <hr />
-            <ul>
-                <li>Informatique
+            <div class="container etudes">
+                <h2 data-i18n="studies"></h2>
+                <hr />
+                <p>
+                    <span data-i18n="studies-status"></span>
+                </p>
+                <p>
+                    <span data-i18n="deutch"></span>
+                    <br>
+                    <span data-i18n="cav"></span>
+                    <hr>
+                    <span data-i18n="bia"></span>
+                    <br>
+                    <span data-i18n="10-stage"></span>
+                    <hr>
+                    <span data-i18n="9-stage"></span>
+                    <br><br>
+                    <span data-i18n="middle-school-option"></span>
                     <ul>
-                        <li>Utilisation quotidienne de Linux (Kubuntu) et de windows 11<br>Maîtrise des commandes de base</li>
-                        <li>Bonne maîtrise de Windows</li>
-                        <li>Programmation :
-                            <ul>
-                                <li>Bonne maîtrise des langages :
-                                    <ul>
-                                        <li>Python / micro python</li>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                      
-                                        <li>PHP</li>
-                                    </ul>
-                                </li>
-                                <li>maîtrise moyenne des langages :
-                                    <ul>
-
-                                        <li>SQL</li>
-
-                                        <li>Django</li>
-                                        <li>Javascript</li>
-                                        <li>Arduino</li>
-                                    </ul>
-                                </li>
-                                <li>maîtrise fragiles des langages :
-                                    <ul>
-                                        <li>Java</li>
-                                        <li>sh</li>
-                                        <li>bat</li>
-                                        <li>C#</li>
-                                        <li>C</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Au 20 décembre 2025, 896 point PIX, soit le maximum actuel, et 580 à la certification en classe de troisième</li>
+                        <li data-i18n="theater"></li>
+                        <li data-i18n="latin"></li>
                     </ul>
-                </li>
-                <li>ASSR2</li>
-            </ul>
+                </p>
+            </div>
+
+            <div class="container loisirs">
+                <h2 data-i18n="leisure"></h2>
+                <hr />
+                <ul>
+                    <li data-i18n="programming"></li>
+                    <li data-i18n="reading"></li>
+                    <li data-i18n="logic-game"></li>
+                    <li data-i18n="cello"></li>
+                </ul>
+            </div>
+
+            <div class="container extrascolair">
+                <h2 data-i18n="after-school-activity"></h2>
+                <hr />
+                <ul>
+                    <li data-i18n="prologin"></li>
+                    <li data-i18n="cmj"></li>
+                    <li data-i18n="cello-learn"></li>
+                </ul>
+            </div>
+
+            <div class="container competences">
+                <h2 data-i18n="skils"></h2>
+                <hr />
+                <ul>
+                    <li><span data-i18n="computer-science"></span>
+                        <ul>
+                            <li data-i18n="os"></li>
+                            <li><span data-i18n="programming"></span> :
+                                <ul>
+                                    <li><span data-i18n="good-mastering"></span> :
+                                        <ul>
+                                            <li>Python / micro python</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>PHP</li>
+                                        </ul>
+                                    </li>
+                                    <li><span data-i18n="intermediate-mastering"></span> :
+                                        <ul>
+
+                                            <li>SQL</li>
+
+                                            <li>Django</li>
+                                            <li>Javascript</li>
+                                            <li>Arduino</li>
+                                        </ul>
+                                    </li>
+                                    <li><span data-i18n="limited-mastering"></span> :
+                                        <ul>
+                                            <li>Kotlin</li>
+                                            <li>sh</li>
+                                            <li>Java</li>
+                                            <li>bat</li>
+                                            <li>C#</li>
+                                            <li>C</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-i18n="pix"></li>
+                        </ul>
+                    </li>
+                    <li>ASSR2</li>
+                </ul>
+            </div>
+
+            <div class="container contact">
+                <h2 data-i18n="contact"></h2>
+                <hr />
+                <ul>
+                    <li><span data-i18n="mail"></span> : <a href="mailto:titouan.petit-frulio@laposte.net">titouan.petit-frulio@laposte.net</a></li>
+                    <li><span data-i18n="phone"></span> : <a href="tel:+33769809965">+33 7 69 80 99 65</a></li>
+                    <li><a href="contact/" data-i18n="website-contact"></a></li>
+                    <li><a href="./res/SSL_key/public_key.pem" data-i18n="openSSL-key"></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="title">
+            <h1 data-i18n="main-project"></h1>
+            <a href="https://github.com/Pythacode" target="_blank" class="github"><img class="logo github" src="res/logo/Github.png" alt="Logo GitHub"></a>
         </div>
 
-        <div class="container contact">
-            <h2>
-                Coordonnées
-            </h2>
-            <hr />
-            <ul>
-                <li>Mail : <a href="mailto:titouan.petit-frulio@laposte.net">titouan.petit-frulio@laposte.net</a></li>
-                <li>Téléphone : <a href="tel:+33769809965">+33 7 69 80 99 65</a></li>
-                <li><a href="contact/">Me contacter depuis le site</a></li>
-                <li><a href="./res/SSL_key/public_key.pem">Clé Open SSL publique</a> (On sait jamais ça peut être utile)</li>
-            </ul>
-
+        <div class="big-container">
+            <a href="./project/ecopixel/" class="container project ecopixel">
+                <div style="flex-direction: inherit;display: flex;">
+                    <img src="res/logo/Ecopixel.png" alt="Logo Ecopixel" class="LogoProject">
+                    <h2>Ecopixel</h2>
+                    <p data-i18n="ecopixel-desc"></p>
+                </div>
+            </a>
+            <a href="./project/youtube_downloader/" class="container project">
+                <div style="flex-direction: inherit;display: flex;">
+                    <img src="res/logo/YTD.png" alt="Logo youtube telechargeur youtube" class="LogoProject">
+                    <h2 data-i18n="yd"></h2>
+                    <p data-i18n="yd-desc"></p>
+                </div>
+            </a>
+            <a href="./project/VerifEDT/" class="container project">
+                <div style="flex-direction: inherit;display: flex;">    
+                    <h2>VerifEDT</h2>
+                    <p data-i18n="verifEDT-desc"></p>
+                </div>
+            </a>
+            <a href="./project/Budget_Manager/" class="container project">
+                <div style="flex-direction: inherit;display: flex;">
+                    <img src="res/logo/BM.png" alt="Logo budget manager" class="LogoProject">
+                    <h2>Budget Manager</h2>
+                    <p data-i18n="budget-manager-desc"></p>
+                </div>
+            </a>
+            <a href="./project/PiLocker/" class="container project">
+                <div style="flex-direction: inherit;display: flex;">
+                    <img src="res/logo/PL.png" alt="Logo budget manager" class="LogoProject">
+                    <h2>PiLocker</h2>
+                    <p data-i18n="pilocker-desc"></p>
+                </div>
+            </a>
         </div>
+    </main>
 
-    </div>
-    <div class="title">
-        <h1>Mes principaux projets</h1>
-        <a href="https://github.com/Pythacode" target="_blank" class="github"><img class="logo github" src="res/logo/Github.png" alt="Logo GitHub"></a>
-    </div>
-
-    <div class="big-container">
-        <a href="./project/ecopixel/" class="container project ecopixel">
-            <div style="flex-direction: inherit;display: flex;">
-                <img src="res/logo/Ecopixel.png" alt="Logo Ecopixel" class="LogoProject">
-                <h2>Ecopixel</h2>
-                <p>Un jeu ou l'on plante des arbres en faisant des recherches internet. Il à été crée dans le cadre du trophées NSI 2026</p>
-            </div>
-        </a>
-        <a href="./project/youtube_downloader/" class="container project">
-            <div style="flex-direction: inherit;display: flex;">
-                <img src="res/logo/YTD.png" alt="Logo youtube telechargeur youtube" class="LogoProject">
-                <h2>Téléchargeur youtube</h2>
-                <p>Un téléchargeur youtube qui fonctionne avec python et YoutubeDLP</p>
-            </div>
-        </a>
-        <a href="./project/VerifEDT/" class="container project">
-            <div style="flex-direction: inherit;display: flex;">    
-                <h2>VerifEDT</h2>
-                <p>Un script python qui se connecte à l'ENT Occitanie de l'utilisateur et récupère les information d'emploi du temps</p>
-            </div>
-        </a>
-        <a href="./project/Budget_Manager/" class="container project">
-            <div style="flex-direction: inherit;display: flex;">
-                <img src="res/logo/BM.png" alt="Logo budget manager" class="LogoProject">
-                <h2>Budget Manager</h2>
-                <p>Une application Android pour suivre ses dépenses</p>
-            </div>
-        </a>
-        <a href="./project/PiLocker/" class="container project">
-            <div style="flex-direction: inherit;display: flex;">
-                <img src="res/logo/PL.png" alt="Logo budget manager" class="LogoProject">
-                <h2>PiLocker</h2>
-                <p>Une application qui verrouille ton PC jusqu'a ce que te rentre les premières décimals de π</p>
-            </div>
-        </a>
+    <div class="select_language">
+        <span data-i18n="default-language"></span>
+        <br>
+        <span data-i18n="change-lang"></span> : 
+        <select id="languages-auto">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
     </div>
 
     <nav>
-        Voir plus
+        <span data-i18n="see-more"></span>
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 10L12 16L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -185,13 +187,18 @@
 
     <footer>
         <img src="./res/img/photo-carre.jpg" alt="Photo" class="photo-moa">
-        <h2>
-            Mon site
-        </h2>
+        <br><br>
+        <span data-i18n="language"></span> : 
+        <select id="languages">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
         <p>
-            Hébergé par : <a href="https://pages.github.com/">GitHub</a>
-            <p id="MAJ">Dernière mise à jour : Chargement...</p>
-            <a href="contact/">Me contacter</a>
+            <span data-i18n="host"></span> : <a href="https://pages.github.com/">GitHub</a>
+            <br>
+            <span data-i18n="last-update"></span> : <span id="MAJ"></span>
+            <br>
+            <a href="contact/" data-i18n="contact-me"></a>
         </p>
     </footer>
 
