@@ -1,43 +1,35 @@
-const MAJchamp = document.getElementById('MAJ')
+async function getDate() {
+  const url = `https://api.github.com/repos/Pythacode/pythacode.github.io/commits`;
 
-function updtadeMaj(value) {
-    MAJchamp.innerText = value
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("response");
+      
+    }
+
+    const commits = await response.json();
+    return new Date(commits[0].commit.author.date);
+
+  } catch (erreur) {
+    console.error(erreur.message);
+  }
 }
 
-const xhr = new XMLHttpRequest();
+export function setUpdateDate(lang) {
+    const dateText = new Intl.DateTimeFormat(lang, options).format(date);    
+    MAJchamp.innerText = dateText
+}
 
-xhr.open("GET", "https://api.github.com/repos/Pythacode/pythacode.github.io/commits", true);
-xhr.responseType = "json";
-
-xhr.onload = function () {
-    if (xhr.status >= 200 && xhr.status < 300) {
-        const response = xhr.response;
-        const lastCommitDate = response[0].commit.author.date;
-
-        const dateObj = new Date(lastCommitDate);
-
-        const options = {
-            timeZone: 'Europe/Paris',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: false,
-        };
-
-        const dateFr = new Intl.DateTimeFormat('fr-FR', options).format(dateObj);
-
-        updtadeMaj("Dernière mise à jour : " + dateFr);
-    } else {
-        console.error("Erreur : " + xhr.statusText);
-        updtadeMaj("Erreur lors de la récupération de la dernière version : " + xhr.statusText);
-    }
+const options = {
+    timeZone: 'Europe/Paris',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
 };
 
-
-xhr.onerror = function () {
-    updtadeMaj("La requête a échoué");
-};
-
-xhr.send();
+const MAJchamp = document.getElementById('MAJ')
+const date = await getDate()
