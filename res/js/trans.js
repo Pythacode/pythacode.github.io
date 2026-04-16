@@ -16,7 +16,7 @@ if (langCookie) {
   language_auto_info.style.display = 'None' 
 } else {
   lang = navigator.language.split('-')[0]
-  setTimeout(mask_lang, 15000)
+  setTimeout(mask_lang, 10000)
 }
 
 function change_language(lang) {
@@ -25,12 +25,10 @@ function change_language(lang) {
   language_auto_select.value = lang
   setData(page, lang)
   setUpdateDate(lang)
-  setTimeout(mask_lang, 500)
 }
 
 function mask_lang() {
   language_auto_info.style.animation = "2s forwards ease-out slide-out"
-  language_auto_info.style.display = 'None' 
 }
 
 async function getData(page, lang="en") {
