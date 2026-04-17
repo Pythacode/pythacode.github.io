@@ -52,6 +52,7 @@ async function setData(page, lang) {
 
   texts.forEach(text => {
       text.innerHTML = data[text.dataset.i18n]
+      text.classList.remove('skeleton-load')
   });
 }
 
