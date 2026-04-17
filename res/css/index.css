@@ -2,6 +2,8 @@
     --background-color : #38363F;
     --background-color-secondary : #434148;
     --highlit-color : #333238;
+    --hover-color : #4d4a56;
+    --shimmer-highlight : #76787c;
 }
 
 @font-face {
@@ -156,4 +158,37 @@ select {
 
 select:hover {
     cursor: pointer;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: 200% 0
+    }
+    100%{
+        background-position: -100% 0
+    }
+}
+
+.skeleton-load {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+
+    background-image: linear-gradient(85deg, var(--hover-color), var(--shimmer-highlight) 20%, var(--hover-color) 40%);
+    background-size: 300% 100%;
+    height: 20px;
+
+    border-radius: 5px;
+}
+
+main .skeleton-load,
+footer .skeleton-load {
+    width: 100px;
+    display: inline-block;
+}
+
+div.big-container .skeleton-load {
+    width: 100%;
+    display: inline-block;
 }

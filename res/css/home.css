@@ -137,13 +137,8 @@ hr {
         grid-row: auto;
     }
 
-
-    .container {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
     h1 {
         font-size: 1rem;
     }
+
 }
