@@ -59,4 +59,4 @@ async function setData(page, lang) {
 language_select.addEventListener('change', (e) => change_language(e.target.value))
 language_auto_select.addEventListener('change', (e) => change_language(e.target.value))
 
-//change_language(lang)
+change_language(lang)
