@@ -19,6 +19,7 @@ async function getDate() {
 export function setUpdateDate(lang) {
     const dateText = new Intl.DateTimeFormat(lang, options).format(date);    
     MAJchamp.innerText = dateText
+    MAJchamp.classList.remove('skeleton-load')
 }
 
 const options = {
