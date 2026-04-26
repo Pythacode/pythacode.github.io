@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="column">
+        <div>
             <h1>Budget<br>Manager</h1>
             <img src="/res/logo/BM.png" alt='logo' class="logo">
         </div>
@@ -40,22 +40,19 @@
             <path d="M6 10L12 16L18 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </nav>
+    
+    <script src="/res/js/downloadSource.js"></script>
+    <script defer>
+        showVersion("Budget_Manager", "version")
+        showCommits("Budget_Manager", "commits")
+    </script>
 
     <footer>
-        <img src="/res/img/square-picture.jpg" alt="Photo" class="photo-moa" title="Picture by prologin">
-        <h2>
-            Mon site
-        </h2>
-        <p>
-            Hébergé par : <a href="https://pages.github.com/">GitHub Pages</a>
-            <p id="MAJ">Dernière mise à jour : Chargement...</p>
-        </p>
-        <script src="/res/js/nav.js" defer></script>
-        <script src="res/js/maj.js" type="module" defer></script>
-        <script src="/res/js/downloadSource.js"></script>
-        <script defer>
-            showVersion("Budget_Manager", "version")
-            showCommits("Budget_Manager", "commits")
+        <script src="/res/js/fetch-footer.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch_footer();
+            });
         </script>
     </footer>
 

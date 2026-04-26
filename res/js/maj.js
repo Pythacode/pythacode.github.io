@@ -34,3 +34,4 @@ const options = {
 
 const MAJchamp = document.getElementById('MAJ')
 const date = await getDate()
+setUpdateDate('fr')
