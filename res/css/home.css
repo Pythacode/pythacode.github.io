@@ -37,14 +37,6 @@
     cursor: pointer;
 }
 
-.photo,
-.github {
-    border-radius: 50% 10%;
-    height: 250px;
-    width: auto;
-    margin-left: 10px;
-}
-
 .logo {
     height: 150px;
     width: auto;
