@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="column">
+        <div>
             <h1>Verif<br>EDT</h1>
         </div>
 	</header>
@@ -37,21 +37,18 @@
         </svg>
     </nav>
 
+    <script src="/res/js/downloadSource.js"></script>
+    <script defer>
+        showCommits("verifEDT", "commits")
+        showCommits("verifEDT", "commits")
+    </script>
+
     <footer>
-        <img src="/res/img/square-picture.jpg" alt="Photo" class="photo-moa" title="Picture by prologin">
-        <h2>
-            Mon site
-        </h2>
-        <p>
-            Hébergé par : <a href="https://pages.github.com/">GitHub Pages</a>
-            <p id="MAJ">Dernière mise à jour : Chargement...</p>
-        </p>
-        <script src="/res/js/nav.js" defer></script>
-        <script src="res/js/maj.js" type="module" defer></script>
-        <script src="/res/js/downloadSource.js"></script>
-        <script defer>
-            showCommits("verifEDT", "commits")
-            showCommits("verifEDT", "commits")
+        <script src="/res/js/fetch-footer.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch_footer();
+            });
         </script>
     </footer>
 

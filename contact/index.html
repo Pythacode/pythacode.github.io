@@ -41,13 +41,12 @@
 
 
     <footer>
-        <h2>
-            Mon site
-        </h2>
-        <p>
-            Hébergé par : <a href="https://pages.github.com/">GitHub Pages</a>
-            <p id="MAJ">Dernière mise à jour : Chargement...</p>
-        </p>
+        <script src="/res/js/fetch-footer.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch_footer();
+            });
+        </script>
     </footer>
 
 </body>

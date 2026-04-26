@@ -210,3 +210,8 @@ li.skeleton-load {
     width: auto;
     margin-left: 10px;
 }
+
+header div {
+    display: flex;
+    align-items: center;
+}
