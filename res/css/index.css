@@ -31,6 +31,7 @@ footer {
 
 footer img.photo-moa {
     border-radius: 50%;
+    height: 200px;
 }
 
 a {
