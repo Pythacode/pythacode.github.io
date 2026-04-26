@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Poetsen One';
-  src: url('./../font/PoetsenOne-Regular.ttf') format('truetype');
+  src: url('/res/font/PoetsenOne-Regular.ttf') format('truetype');
 }
 
 body {
@@ -201,4 +201,12 @@ div.contact ul .skeleton-load {
 
 li.skeleton-load {
     display: inline flow-root list-item !important;
+}
+
+.photo,
+.github {
+    border-radius: 50% 10%;
+    height: 250px;
+    width: auto;
+    margin-left: 10px;
 }
