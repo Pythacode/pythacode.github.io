@@ -27,7 +27,6 @@ function def_left(span) {
 
 
 for (let i=0;i<smiley_background.length;i++) {
-    console.log(i, smiley_background[i])
     let span = document.createElement('span')
     span.innerHTML = smiley_background[i]
     span.className = 'fall';
