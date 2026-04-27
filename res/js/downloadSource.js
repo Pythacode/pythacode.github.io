@@ -97,7 +97,7 @@ function showCommits(name, container) {
         const title = document.createElement('td')
         const link = document.createElement('a')
         link.innerText = info.commit.message
-        link.href = info.commit.html_url
+        link.href = info.html_url
         title.appendChild(link)
         
         const author = document.createElement('td')
