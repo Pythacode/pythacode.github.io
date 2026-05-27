@@ -75,6 +75,10 @@ hr {
     box-shadow : white 0 0 13px;
 }
 
+svg.html5 {
+    fill: white;
+    width: 100px;
+}
 
 @media (max-width: 1000px) {
     body {
