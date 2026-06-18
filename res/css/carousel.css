@@ -1,0 +1,35 @@
+.carousel {
+    padding: 10px;
+    margin: 0 -10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#views_windows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50vw;
+    overflow: hidden;
+}
+
+#views_windows img {
+    width: 50vw;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#carousel_nav {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.point {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition-duration: 2s;
+}

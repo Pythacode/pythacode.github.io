@@ -1,0 +1,10 @@
+nav {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+}

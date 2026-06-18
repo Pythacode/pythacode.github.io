@@ -1,0 +1,27 @@
+header {
+    flex-direction: column;
+    height: auto;
+    padding-top: 50px;
+}
+
+header p {
+    width: 50vw;
+    text-align: justify ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+code {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+hr, main p {
+    width: 50%;
+}

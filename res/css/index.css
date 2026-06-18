@@ -87,23 +87,14 @@ header,
     font-size: large;
 }
 
-nav {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    transition-duration: 500ms;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    align-items: center;
-}
-
 .button {
     border-radius: 5px;
     text-decoration: none;
-    color: var(--background-color);
-    background-color: white;
+    background-color: var(--background-color-secondary);
+    color: white;
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
 }
 
 h3.separator {
