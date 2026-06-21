@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
 	<title>C.V. Petit--Frulio Titouan</title>
-    <script src="res/js/maj.js" type="module" defer></script>
     <link rel="stylesheet" type="text/css" href="/res/css/index.css">
     <link rel="stylesheet" type="text/css" href="/res/css/confirm.css">
 	<link rel="icon" href="/res/img/square-picture.jpg" type="image/x-icon">
@@ -34,15 +33,12 @@
 	</main>
 
     <footer>
-        <img src="/res/img/square-picture.jpg" alt="Photo">
-        <h2>
-            Mon site
-        </h2>
-        <p>
-            Hébergé par : <a href="https://pages.github.com/">GitHub Pages</a>
-            <p id="MAJ">Dernière mise à jour : Chargement...</p>
-            <a href="contact/">Me contacter</a>
-        </p>
+        <script src="/res/js/fetch-footer.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch_footer();
+            });
+        </script>
     </footer>
 
 </body>

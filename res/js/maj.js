@@ -1,3 +1,5 @@
+const MAJchamp = document.getElementById('MAJ')
+
 async function getDate() {
   const url = `https://api.github.com/repos/Pythacode/pythacode.github.io/commits`;
 
@@ -16,8 +18,8 @@ async function getDate() {
   }
 }
 
-export function setUpdateDate(lang) {
-    const dateText = new Intl.DateTimeFormat(lang, options).format(date);    
+export async function setUpdateDate(lang) {
+    const dateText = new Intl.DateTimeFormat(lang, options).format(await getDate());    
     MAJchamp.innerText = dateText
     MAJchamp.classList.remove('skeleton-load')
 }
@@ -32,6 +34,4 @@ const options = {
     hour12: false,
 };
 
-const MAJchamp = document.getElementById('MAJ')
-const date = await getDate()
 setUpdateDate('fr')
