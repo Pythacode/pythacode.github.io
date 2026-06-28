@@ -33,6 +33,7 @@
     "phone" : "Téléphone",
     "website-contact" : "Me contacter depuis le site",
     "openSSL-key" : "Clé Open SSL publique",
+    "cpg-key" : "Clé cpg publique",
     "websites" : "Les sites que j'ai crée",
     "lostme-desc" : "Un site pour faire perdre des gens en leurs envoyant un sms/message discord",
     "livramis-desc" : "Un site pour échanger des livres entre amis",
