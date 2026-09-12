@@ -24,7 +24,13 @@ function scroll_carousel() {
         if (index == 6 & views_windows.indexOf(child) == 0) {
             child.addEventListener("transitionend", restart)
         }
-        child.style.transform = `translateX(calc(${-index}*(50vw + 10px)))`
+        let w;
+        if (window.innerWidth <= 825) {
+            w = 95
+        } else {
+            w = 50
+        }
+        child.style.transform = `translateX(calc(${-index}*(${w}vw + 10px)))`
     });
 }
 setInterval(scroll_carousel, 5000)

@@ -1,7 +1,8 @@
 {
     "studies" : "Études",
-    "studies-status" : "Élève de première au <a href=\"https://joliot-curie.mon-ent-occitanie.fr/\">lycée I. et F. Joliot Curie</a>",
-    "deutch" : "LV2 : Allemand",
+    "deutsch-year" : "Actuellement en 12ème classe en Allemagne",
+    "studies-status" : "Hors de cette année, au <a href=\"https://joliot-curie.mon-ent-occitanie.fr/\">lycée I. et F. Joliot Curie</a>",
+    "deutsch" : "LV2 : Allemand",
     "cav" : "Option cinéma audio visuel en première",
     "degrees" : "Diplomes",
     "bia" : "B.I.A mention assez bien",

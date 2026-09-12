@@ -33,3 +33,11 @@
     border-radius: 50%;
     transition-duration: 2s;
 }
+
+
+@media (max-width: 825px) {
+    #views_windows,
+    #views_windows img {
+        width: 95vw;
+    }
+}
