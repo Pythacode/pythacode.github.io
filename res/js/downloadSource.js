@@ -58,33 +58,33 @@ function createLigne(table, url, title, date_text, size_text) {
 
 function showVersion(name, container) {
   getVersion(name).then(infos => {
-      infos.forEach(info => {
-          const newDiv = document.createElement("fieldset");
-          const title = document.createElement("legend");
-          title.textContent = info.name || info.tag_name || "Version inconu";
-          const table = document.createElement("table");
+    document.getElementById(container).innerHTML = ""
+    infos.forEach(info => {
+      const newDiv = document.createElement("fieldset");
+      const title = document.createElement("legend");
+      title.textContent = info.name || info.tag_name || "Version inconu";
+      const table = document.createElement("table");
 
-          // GitHub Link
-          createLigne(table, info.html_url, "Lien GitHub", `${formatDate(info.published_at)} UTC +2`, "")
+      // GitHub Link
+      createLigne(table, info.html_url, "Lien GitHub", `${formatDate(info.published_at)} UTC +2`, "")
 
-          // Full Changelog
-          createLigne(table, info.html_url.replace('releases/tag', 'commits'), "Changelog", `${formatDate(info.published_at)} UTC +2`, "")
+      // Full Changelog
+      createLigne(table, info.html_url.replace('releases/tag', 'commits'), "Changelog", `${formatDate(info.published_at)} UTC +2`, "")
 
-          info.assets.forEach(asset => {
-              createLigne(table, asset.browser_download_url, asset.name, `${formatDate(asset.updated_at)} UTC +2`, formatFileSize(asset.size))
-          })
-          
-          // Zip            
-          createLigne(table, info.zipball_url, "Code source (.zip)", `${formatDate(info.published_at)} UTC +2`, "")
+      info.assets.forEach(asset => {
+          createLigne(table, asset.browser_download_url, asset.name, `${formatDate(asset.updated_at)} UTC +2`, formatFileSize(asset.size))
+      })
+      
+      // Zip            
+      createLigne(table, info.zipball_url, "Code source (.zip)", `${formatDate(info.published_at)} UTC +2`, "")
 
-          // tar.gz
-          createLigne(table, info.tarball_url, "Code source (.tar.gz)", `${formatDate(info.published_at)} UTC +2`, "")
+      // tar.gz
+      createLigne(table, info.tarball_url, "Code source (.tar.gz)", `${formatDate(info.published_at)} UTC +2`, "")
 
-          newDiv.appendChild(title);
-          newDiv.appendChild(table);
-          document.getElementById(container).innerHTML = ""
-          document.getElementById(container).appendChild(newDiv);
-      });
+      newDiv.appendChild(title);
+      newDiv.appendChild(table);
+      document.getElementById(container).appendChild(newDiv);
+    });
   });
 }
 
