@@ -27,7 +27,7 @@ request.send();
 
 function formatDate(isoDate) {
   const date = new Date(isoDate);
-  return date.toLocaleDateString("fr-FR", {
+  return date.toLocaleDateString("en-EN", {
     year: "numeric",
     month: "short",
     day: "2-digit",
@@ -42,7 +42,7 @@ request.onload = function () {
     spanId.innerText = '#' + user_info.id
     username_h1.href = user_info.html_url
     blog.innerHTML = blog.href = user_info.blog
-    created.innerText = "membre since " + formatDate(user_info.created_at)
+    created.innerText = "Membre since " + formatDate(user_info.created_at)
     bio_h3.innerText = user_info.bio
     compagnie.innerHTML = user_info.company
     followers_span.innerHTML = user_info.followers + ' follower' + (user_info.followers > 1 ? 's' : '')
