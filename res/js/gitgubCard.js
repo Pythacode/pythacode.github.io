@@ -1,4 +1,5 @@
 const username_h1 = document.getElementById("username");
+const acount_link = document.getElementById("acount_link");
 const blog = document.getElementById("blog");
 const spanId = document.getElementById("id");
 const created = document.getElementById('created')
@@ -40,7 +41,7 @@ request.onload = function () {
     var user_info = request.response;
     username_h1.innerText = user_info.login
     spanId.innerText = '#' + user_info.id
-    username_h1.href = user_info.html_url
+    acount_link.href = user_info.html_url
     blog.innerHTML = blog.href = user_info.blog
     created.innerText = "Membre since " + formatDate(user_info.created_at)
     bio_h3.innerText = user_info.bio
