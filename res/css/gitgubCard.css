@@ -11,11 +11,10 @@ a {
     color:white;
 }
 
-main {
+.top {
     display: flex;
     align-self: center;
     flex-direction: column;
-    background-color: var(--background-color);
     padding: 50px;
     border: 1px solid white;
     border-radius: 1rem;
@@ -54,4 +53,18 @@ hr {
     height: 200px;
     width: auto;
     margin-right: 10px;
+}
+
+input {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(73, 71, 71);
+    color: white;
+    padding: 2px;
+    &:focus {
+        outline: none;
+    }
 }
