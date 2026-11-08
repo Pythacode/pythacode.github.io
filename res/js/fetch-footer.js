@@ -13,12 +13,12 @@ function fetch_footer(translate=false) {
 
         // Réexécuter les scripts du footer
         div.querySelectorAll("script").forEach(oldScript => {
-        const newScript = document.createElement("script");
-        if (oldScript.src) newScript.src = oldScript.src;
-        if (oldScript.type) newScript.type = oldScript.type;
-        if (oldScript.defer) newScript.defer = oldScript.defer;
-        if (!oldScript.src) newScript.textContent = oldScript.textContent;
-        document.body.appendChild(newScript);
+            const newScript = document.createElement("script");
+            for (const attr of oldScript.attributes) {
+                newScript.setAttribute(attr.name, attr.value);
+            }
+            if (!oldScript.src) newScript.textContent = oldScript.textContent;
+            document.body.appendChild(newScript);
         });
     });
 }
