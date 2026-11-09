@@ -108,7 +108,6 @@ svg.html5 {
     left: -4px;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
-    background-color: rgba(0,0,0,0);
     filter: blur(1px);
     transition-duration: 500ms;
     clip-path: polygon(
@@ -116,11 +115,13 @@ svg.html5 {
         var(--P1x) var(--P1y),
         var(--P2x) var(--P2y)
     );
+    opacity: 0;
+    transition-duration: 500ms;
+    background: conic-gradient(from 315deg, #CC3EFF 0%, #4344FF 33%, #2FBEE6 67%, #CC3EFF 100%);;
 }
 
 .container:hover::after {
-    background: #CC3EFF;
-    background: conic-gradient(from 315deg, #CC3EFF 0%, #4344FF 33%, #2FBEE6 67%, #CC3EFF 100%);;
+    opacity: 1;
 }
 
 .github {
