@@ -87,7 +87,6 @@ svg.html5 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
-    grid-template-rows: repeat(5, auto);
     margin: 0 10px;
 }
 
@@ -124,10 +123,8 @@ svg.html5 {
     background: conic-gradient(from 315deg, #CC3EFF 0%, #4344FF 33%, #2FBEE6 67%, #CC3EFF 100%);;
 }
 
-@media (max-height : 790) {
-    .big-container {
-        height: 100vh;  
-    }  
+.github {
+    width: 100px;
 }
 
 @media (max-width: 1000px) {
@@ -187,4 +184,12 @@ svg.html5 {
         font-size: 1rem;
     }
 
+    .photo,
+    footer img.photo-moa {
+        height: 150px !important;
+    }
+
+    .container:hover::after {
+        background: rgba(0, 0, 0, 0) !important;
+    }
 }

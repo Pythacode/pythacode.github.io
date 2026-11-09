@@ -59,9 +59,18 @@ header,
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 50px;
+    margin: 30px 0;
     text-align: end;
     font-size: large;
+    gap: 5px;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    border: 2px solid white;
+    flex: 1;
 }
 
 .button {
@@ -170,11 +179,9 @@ li.skeleton-load {
     display: inline flow-root list-item !important;
 }
 
-.photo,
-.github {
+.photo {
     border-radius: 50% 10%;
     height: 250px;
-    width: auto;
     margin-left: 10px;
 }
 
