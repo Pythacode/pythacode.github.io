@@ -12,5 +12,6 @@ document.addEventListener('keydown', (event) => {
     if (touches.join(", ") == "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a" ) {
         console.log("kokami !");
         window.location.href = "/kokami";
+        window.umami?.track(`Kokami code !`)
     }
 });

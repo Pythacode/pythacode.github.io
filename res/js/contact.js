@@ -91,6 +91,7 @@ form.addEventListener('submit', function(event) {
         };
 
     emailjs.send('service_msk0cz5', 'template_nvzblfj', templateParams)
+    window.umami?.track(`Email send !`)
     .then(function(response) {
         window.location.href += '/confirm';
     }, function(error) {
