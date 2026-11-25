@@ -37,6 +37,7 @@
     "openSSL-key" : "Public openSSL Key",
     "cpg-key" : "Public cpg Key",
     "websites" : "My websites",
+    "bddmapper-desc": "A website for create map of bdd",
     "1yB" : "1 year to Berlin",
     "1yB-desc" : "A website for post picture of my year to Berlin",
     "lostme-desc" : "A website designed to trick people by sending them a SMS/Discord message",

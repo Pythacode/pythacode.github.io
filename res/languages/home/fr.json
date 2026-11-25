@@ -37,6 +37,7 @@
     "openSSL-key" : "Clé Open SSL publique",
     "cpg-key" : "Clé cpg publique",
     "websites" : "Les sites que j'ai crée",
+    "bddmapper-desc": "Un site pour cartographier une bdd",
     "1yB" : "1 an à Berlin",
     "1yB-desc" : "Un site pour poster des photos de mon année à Berlin",
     "lostme-desc" : "Un site pour faire perdre des gens en leurs envoyant un sms/message discord",
